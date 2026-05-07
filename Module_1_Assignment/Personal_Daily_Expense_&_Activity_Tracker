@@ -1,0 +1,45 @@
+print(" Welcome to Daily Life Tracker Program")
+print("User Information Section: ")
+name = input("Enter your name: ")
+total_available_hours_for_today = float(input("Enter available hours: "))
+daily_budget = float(input("Enter your budget: "))
+print("Name: " + name)
+print("Available hours: ", total_available_hours_for_today, "h")
+print("Budget: ", daily_budget, "tk")
+print("Daily Activity Input: ")
+Studying_Python = float(input("Enter study time: "))
+Practicing_coding = float(input("Enter coding time: "))
+Other_activities = float(input("Enter other activities time: "))
+print("Studying python: ", Studying_Python, "h")
+print("Practicing code: ", Practicing_coding, "h")
+print("Other activities time: ", Other_activities, "h")
+Total_activity_hours_planned_for_the_day = Studying_Python +
+Practicing_coding + Other_activities
+print("Total activity hours: ",Total_activity_hours_planned_for_the_day,"h")
+print("Expense Input: ")
+Food_expense = float(input("Enter Food expense : "))
+Transportation_expense = float(input("Enter transportation expense : "))
+Other_expense = float(input("Enter other expenses: "))
+print("Food expense: ", Food_expense, "tk")
+print("Transportation expense: ", Transportation_expense, "tk")
+print("Other Expense: ", Other_expense, "tk")
+Total_daily_expense = Food_expense + Transportation_expense + Other_expense
+print("Total daily expense: ", Total_daily_expense, "tk")
+print("Time Planning Check")
+if total_available_hours_for_today <
+Total_activity_hours_planned_for_the_day:
+print("You have planned more hours than activity")
+else:
+print("Your daily plan is realistic")
+print("Budget Check")
+if Total_daily_expense > daily_budget:
+print("You have exceeded your daily budget.")
+else:
+print("You are within your daily budget.")
+print("Final Summary Output :")
+print("Name:", name)
+print("Available hours: ", total_available_hours_for_today, "h")
+print("Activity hours: ", Total_activity_hours_planned_for_the_day,"h")
+print("Total Expense: ", Total_daily_expense, "tk")
+remaining_budget = daily_budget - Total_daily_expense
+print("Remaining Budget: ", remaining_budget, "tk")
