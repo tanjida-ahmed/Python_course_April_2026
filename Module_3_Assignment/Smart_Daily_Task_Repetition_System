@@ -1,0 +1,26 @@
+print("Welcome to Smart Task Repetition System")
+task_name = input("Enter your task name: ")
+repeat = int(input("How many times do you want to repeat this task
+today? "))
+print("\n Task Repetition: ")
+for i in range(1, repeat + 1):
+ print(f"Task ({i}): {task_name} completed.")
+count = int(input("Enter a number to start countdown: "))
+while count > 0:
+ print(count)
+ count -= 1
+print("\nDaily Schedule:")
+sessions = ["Morning", "Evening"]
+for session in sessions:
+ for i in range(1, 4):
+ print(f"{session} Task {i}")
+print("\n Infinite Loop :")
+counter = 1
+while counter <= 5:
+ print("Loop running.", counter)
+ counter += 1
+print("Loop stopped safely!")
+print("\n Summary :")
+print(f"Task Name: {task_name}")
+print(f"Total Repetitions Completed: {repeat}")
+print("Countdown finished successfully!")
