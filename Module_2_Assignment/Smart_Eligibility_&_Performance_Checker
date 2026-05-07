@@ -1,0 +1,35 @@
+print("Welcome to Smart Eligibility & Performance Checker: \n")
+Name=str(input("Enter your name: "))
+Age=int(input("Enter your age: "))
+Exam_Score=int(input("Enter your score: "))
+Monthly_Income=int(input("Enter your monthly income: "))
+print("...................")
+print("Name: ",Name)
+print("Age: ",Age,"y")
+print("Score:",Exam_Score)
+print("Income: ",Monthly_Income,"tk")
+print("Age Eligibility Check:")
+if Age<18:
+ print("You are not eligible due to age restrictions.\n")
+else:
+ print("Age requirement passed.\n")
+print("Score Evaluation: ")
+if Exam_Score >=90 and Exam_Score <=100:
+ print("A")
+elif Exam_Score>=75:
+ print("B")
+elif Exam_Score>=60:
+ print("C")
+else:
+ print("Grade: Fail")
+print("Financial Support Check:\n ")
+if Monthly_Income<20000 and Exam_Score>75:
+ print("Eligible for scholarship support.")
+else:
+ print("Not eligible for scholarship.")
+if Age>=18 :
+ if Exam_Score>=60:
+ print( "You passed the program.")
+else:
+ print("You failed the program.")
+ print("Program access denied.")
